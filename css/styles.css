@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  background: #eee;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  height: 50px;
+  width: 100%;
+}
+
+.menu a {
+  color: inherit;
+  line-height: 50px;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.5s ease-out;
+}
+
+.menu .menu__link-active {
+  color: #ff0;
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.scrollToTop {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  font-size: 40px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  pointer-events: none;
+}
+.activeScrollToTop {
+  opacity: 1;
+  pointer-events: all;
+}
